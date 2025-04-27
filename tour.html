@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tour.css">
+    <title>Dynamic Tourism Page</title>
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('destinations')">Destinations</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="section">
+            <h2>Welcome to Our Tourism Page</h2>
+            <p>Discover amazing places around the world!</p>
+        </section>
+
+        <section id="destinations" class="section" style="display: none;">
+            <h2>Featured Destinations</h2>
+            <div id="destination-list"></div>
+        </section>
+
+        <section id="about" class="section" style="display: none;">
+            <h2>About Us</h2>
+            <p>We are dedicated to helping you explore the best travel destinations.</p>
+        </section>
+
+        <section id="contact" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Email: info@tourism.com</p>
+        </section>
+    </main>
+
+    <script src="tour.js"></script>
+</body>
+</html>
